@@ -1,1 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&family=Rajdhani:wght@300;400;500&family=Roboto+Slab:wght@100;300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap');
+
+:root{
+    --main-color: #e2725b;
+    --first-color: #3f826d;
+    --second-color: #e1e6e1;
+}
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; 
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    line-height: 1.5;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+body{
+    background: var(--second-color);
+    padding-left: 30rem; 
+}
+section{
+    padding: 1rem 5%;
+    min-height: 100vh;
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .5rem 1rem;
+    background: var(--main-color);
+    color: #e1e6e1;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+.btn:hover{
+    background: #3f826d;
+    letter-spacing: .3rem;
+
+}
+.heading{
+    font-size: 4rem;
+    padding-bottom: 1rem;
+    color: #3f826d;
+    text-transform: uppercase;
+}
+.heading span{
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+header{
+    position: fixed;
+    top: 0; bottom: 0; left: 0;
+    background: var(--first-color);
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    flex-flow: column;
+    padding: 10rem 2rem;
+    width: 30rem;
+    text-align: center;
+}
+header .logo{
+    text-transform: uppercase;
+    color: var(--second-color);
+    font-size: 3rem;
+    font-weight: bolder;
+}
+header .logo span{
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+header .navbar a{
+    display: block;
+    font-size: 5rem;
+    color: var(--second-color);
+    margin: .1rem 0;
+}
+header .navbar a:hover{
+    letter-spacing: .3rem;
+    color: var(--main-color);
+}
+header .follow a{
+    font-size: 2.5rem;
+    color: var(--second-color);
+    margin: 0.7rem;
+}
+header .follow a:hover{
+    color: var(--main-color);
+}
+.home{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.home .image{
+    flex: 1 1 40rem;
+}
+.home .image img{
+    width: 100%;
+}
+.home .content{
+    flex: 1 1 40rem;
+}
+.home .content .hi{
+    font-size: 3rem;
+    color: var(--main-color);
+}
+.home .content h3{
+    font-size: 3.5rem;
+    color: var(--first-color);
+    text-transform: uppercase;
+}
+.home .content h3 span{
+    color: var(--first-color);
+    text-transform: uppercase;
+}
+.home .content .info{
+    font-size: 2.5rem;
+    color: var(--main-color);
+   padding: .5rem 0;
+}
+.home .content .text{
+    font-size: 1.7rem;
+    color:black;
+   padding: .5rem 0;
+}
+.about .row-1{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    padding-bottom: 2rem;
+}
+.about .row-1 .image{
+    flex:1 1 25;
+}
+.about .row-1 .image img{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+    border:1rem solid #e1e6e1;
+    border-radius: .5rem;
+    box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+.about .row-1 .content{
+    flex:1 1 50;
+} 
+.about .row-1 .content h3{
+    color: black;
+    font-size: 3.5rem;
+} 
+.about .row-1 .content p{
+    color: #666;
+    font-size: 1.7rem;
+    padding:.5rem;
+} 
+.about .row-1 .content .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 0.5 0;
+}
+.about .row-1 .content .box-container .box{
+    flex: 1 1 20rem;
+}
+.about .row-1 .content .box-container .box span{
+    color: var(--main-color);
+}
+.about .row-2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+.about .row-2 .skills{
+    flex: 1 1 40rem;
+}
+.about .row-2 .skills .progress{
+    padding: 1rem 0;
+}
+.about .row-2 .skills .progress h3{
+    display: flex;
+    justify-content: space-between;
+    padding: .7rem 0;
+    font-size: 1.7rem;
+    color: black;
+    font-weight: 400;
+}
+.about .row-2 .skills .progress .bar{
+    width: 100%;
+    background: #e1e6e1;
+    overflow: hidden;
+    height: 1rem;
+    border-radius: 50rem;
+}
+.about .row-2 .box-container{
+    flex: 1 1 40rem;
+}
+h1 {
+    color: #666;
+    text-align: center;
+    font-size: 1.7rem;
+    font-size: 200%;
+  } 
+body{ 
+  background-color: #e1e6e1;
+  color:var(--main-color);
+  font-size:150%;
+}
+div {
+   	border-style: solid;
+    border-bottom: var(--main-color);
+    border-color: #3f826d;
+    }
+
+
 
