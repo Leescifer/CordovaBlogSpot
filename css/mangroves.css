@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&family=Titillium+Web:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap');
+
+:root{
+    --color-main: #f0f0f0;
+    --color-secondary: #be3144;
+    --color-primary: #45567d;
+    --color-base: #303841;
+    --box-shadow: 0px 15px 25px rgba(0,0,0,0.08);
+}
+
+*{
+    font-family: 'Times New Roman', Times, serif;
+ }
+ 
+ html{
+     scroll-behavior: smooth;
+ }
+ 
+ .container{
+    height: 120vh;
+ }
+
+ .full-height{
+    opacity: 0;
+    filter: blur(6px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.img-fluid:hover{
+   color: var(--color-base) transparent;
+}
+
+.heading{
+    text-align: center;
+    margin-bottom: 50px;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.heading span{
+    color: var(--color-primary);
+}
+
+.descryption{
+    font-size: 23px;
+}
